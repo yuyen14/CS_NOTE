@@ -103,12 +103,16 @@ mode 許可控制檔案如何被他人調用
 >>w：可寫入(2)
 
 >>x：可執行(1)
+
 檔案 filel. txt 設為所有人皆可讀取：
 chmod ugotr filel. txt
+
 將檔案 filel. txt 與file2.txt 設為該檔案擁有者，與其所屬同一個群體者可寫入但其他以外的人則不可寫入：
 chmod ug+w,o-w filel. txt file2.txt
+
 將ex1. py 設定為只有該檔案擁有者可以執行:
 chmod u+x exl.py
+
 將目前目錄下的所有檔案與子目錄皆設為任何人可讀取：
 chmod -R a+r*
 
